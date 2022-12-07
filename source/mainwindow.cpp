@@ -21,8 +21,6 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(pActionPassword, SIGNAL(triggered(bool)), this, SLOT(slot_actionPassword_triggered(bool)));
     connect(pActionSet, SIGNAL(triggered(bool)), this, SLOT(slot_actionSet_triggered(bool)));
     connect(pActionAbout, SIGNAL(triggered(bool)), this, SLOT(slot_actionAbout_triggered(bool)));
-    connect(ui->pushButton_compress, SIGNAL(clicked(bool)), this, SLOT(slot_pushButton_compress_clicked(bool)));
-    connect(ui->pushButton_uncompress, SIGNAL(clicked(bool)), this, SLOT(slot_pushButton_uncompress_clicked(bool)));
 }
 
 MainWindow::~MainWindow()
@@ -43,14 +41,4 @@ void MainWindow::slot_actionSet_triggered(bool)
 void MainWindow::slot_actionAbout_triggered(bool)
 {
     qDebug()<<"slot_actionAbout_triggered";
-}
-
-void MainWindow::slot_pushButton_compress_clicked(bool)
-{
-    qDebug()<<"slot_pushButton_compress_clicked";
-}
-
-void MainWindow::slot_pushButton_uncompress_clicked(bool)
-{
-    qDebug()<<"slot_pushButton_uncompress_clicked";
 }

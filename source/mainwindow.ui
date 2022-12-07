@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>282</width>
-    <height>110</height>
+    <width>546</width>
+    <height>503</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,29 +16,20 @@
   <widget class="QWidget" name="centralWidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
-     <widget class="QPushButton" name="pushButton_compress">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>1</number>
       </property>
-      <property name="text">
-       <string>压缩</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="pushButton_uncompress">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="text">
-       <string>解压</string>
-      </property>
+      <widget class="QWidget" name="tab_compress">
+       <attribute name="title">
+        <string>压缩</string>
+       </attribute>
+      </widget>
+      <widget class="QWidget" name="tab_uncompress">
+       <attribute name="title">
+        <string>解压</string>
+       </attribute>
+      </widget>
      </widget>
     </item>
    </layout>
@@ -48,7 +39,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>282</width>
+     <width>546</width>
      <height>23</height>
     </rect>
    </property>
