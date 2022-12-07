@@ -13,8 +13,13 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    widget/formuncompress.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    widget/formuncompress.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    widget/formuncompress.ui
+
+INCLUDEPATH += $$PWD/widget

@@ -25,7 +25,7 @@
         <string>压缩</string>
        </attribute>
       </widget>
-      <widget class="QWidget" name="tab_uncompress">
+      <widget class="FormUncompress" name="tab_uncompress">
        <attribute name="title">
         <string>解压</string>
        </attribute>
@@ -46,6 +46,14 @@
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>FormUncompress</class>
+   <extends>QWidget</extends>
+   <header location="global">formuncompress.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
