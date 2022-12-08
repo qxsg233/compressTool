@@ -14,10 +14,12 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    widget/formuncompress.cpp
+    widget/formuncompress.cpp \
+    widget/mylistwidget.cpp
 
 HEADERS  += mainwindow.h \
-    widget/formuncompress.h
+    widget/formuncompress.h \
+    widget/mylistwidget.h
 
 FORMS    += mainwindow.ui \
     widget/formuncompress.ui
